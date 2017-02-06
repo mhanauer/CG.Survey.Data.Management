@@ -7,9 +7,9 @@ aca = x[,7:8]
 cc = x[,9:10]
 # Now we are creating mean variable for each of the constructs
 # We taking the mean to be consistent with excel, because pivot tables cannot take the median
-sel.mean = apply(sel, 1, mean); sel.median
-aca.mean = apply(aca, 1, mean); aca.median
-cc.mean = apply(aca, 1, mean); cc.median
+sel.mean = apply(sel, 1, mean); sel.mean
+aca.mean = apply(aca, 1, mean); aca.mean
+cc.mean = apply(aca, 1, mean); cc.mean
 # Now we are adding back each of the variables into the original data set
 x$sel.mean =  sel.mean; x
 x$aca.mean = aca.mean; x
